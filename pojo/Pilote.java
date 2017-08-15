@@ -15,7 +15,10 @@ public class Pilote implements Comparator,Comparable<Pilote>{
 	Statut statut;
 	Voiture voiture;
 	int idVoiture;
-	public int getIdVoiture(){return voiture.getIdVoiture();}
+	public int getIdVoiture(){
+
+		//idVoiture=voiture.getIdVoiture();
+		return idVoiture;}
 	public void setIdVoiture(int idVoiture){voiture.setIdVoiture(idVoiture);}
 	public int getIdPilote() {
 		return idPilote;

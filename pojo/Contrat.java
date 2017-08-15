@@ -9,6 +9,45 @@ public class Contrat implements Comparator,Comparable<Contrat>{
 	int idContrat;
 	Saison saison;
 	Ecurie ecurie;
+	int idEcurie;
+	int idPilote;
+	int idCoPilote;
+	int idSponsor;
+	int idVoiture;
+	public int getIdCoPilote() {
+		return idCoPilote;
+	}
+	public void setIdCoPilote(int idCoPilote) {
+		this.idCoPilote = idCoPilote;
+	}
+
+	public int getIdEcurie() {
+		return idEcurie;
+	}
+	public void setIdEcurie(int idEcurie) {
+		this.idEcurie = idEcurie;
+	}
+	public int getIdPilote() {
+		return idPilote;
+	}
+	public void setIdPilote(int idPilote) {
+		this.idPilote = idPilote;
+	}
+	public int getIdSponsor() {
+		return idSponsor;
+	}
+	public void setIdSponsor(int idSponsor) {
+		this.idSponsor = idSponsor;
+	}
+	public int getIdVoiture() {
+		return idVoiture;
+	}
+	public void setIdVoiture(int idVoiture) {
+		this.idVoiture = idVoiture;
+	}
+	public void setPilote(Pilote[] pilote) {
+		this.pilote = pilote;
+	}
 	Pilote[] pilote=new Pilote[2];
 	Sponsor sponsor;
 	Voiture voiture;

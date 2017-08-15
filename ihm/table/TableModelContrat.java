@@ -37,10 +37,14 @@ public class TableModelContrat extends AbstractTableModel{
 		switch(columnIndex){
 		case 0:return listContrat.get(rowIndex).getIdContrat();
 		case 1:return listContrat.get(rowIndex).getSaison();
-		case 2:return listContrat.get(rowIndex).getEcurie();
-		case 3:return listContrat.get(rowIndex).getPilote();
-		case 4:return listContrat.get(rowIndex).getCoPilote();
-		case 5:return listContrat.get(rowIndex).getSponsor();
-		case 6:return listContrat.get(rowIndex).getVoiture();
+		case 2:return listContrat.get(rowIndex).getIdEcurie();
+		case 3:return listContrat.get(rowIndex).getIdPilote();
+		case 4:return listContrat.get(rowIndex).getIdCoPilote();
+		case 5:return listContrat.get(rowIndex).getIdSponsor();
+		case 6:return listContrat.get(rowIndex).getIdVoiture();
 		default:throw new IllegalArgumentException();}	
-	}}
+	}
+	@Override
+	public String getColumnName(int columnIndex) {
+		return title[columnIndex];
+	}	}

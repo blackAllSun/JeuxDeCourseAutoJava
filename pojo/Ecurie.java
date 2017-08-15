@@ -4,6 +4,17 @@ import java.util.Comparator;
 
 public class Ecurie implements Comparator,Comparable<Ecurie> {
 	int idEcurie; String nom;Adresse adresse; float budget;
+	int idAdresse;
+	
+
+	public int getIdAdresse() {
+		return idAdresse;
+	}
+
+
+	public void setIdAdresse(int idAdresse) {
+		this.idAdresse = idAdresse;
+	}
 
 
 	public Ecurie(int idEcurie, String nom, Adresse adresse, float budget) {

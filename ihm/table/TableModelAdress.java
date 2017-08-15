@@ -41,5 +41,8 @@ public class TableModelAdress extends AbstractTableModel{
 		case 2:return listAdresse.get(rowIndex).getPays();
 		default:throw new IllegalArgumentException();}	
 	}
-
+	@Override
+	public String getColumnName(int columnIndex) {
+		return title[columnIndex];
+	}	
 }

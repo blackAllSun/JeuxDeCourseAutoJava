@@ -18,7 +18,7 @@ public class PanTablePilote extends JPanel{
 	JTable table=new JTable(model);
 	public PanTablePilote() throws FileNotFoundException, UnsupportedEncodingException{
 		add(new JScrollPane(table));
-		//table.setDefaultRenderer(Statut.class, new StatutRenderer());
+		table.setDefaultRenderer(Statut.class, new StatutRenderer());
 	//	table.getColumnModel().getColumn(5).setCellRenderer(new TableLabelRendererVoiture());
 	}
 }

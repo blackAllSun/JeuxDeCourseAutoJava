@@ -3,10 +3,10 @@ package jeuxDeVoitureAuto.pojo;
 import com.google.gson.annotations.SerializedName;
 
 public enum Statut {
-	@SerializedName("${pilote}")
-	PILOTE("pilote"),
-	@SerializedName("${copilote}")
-	COPILOTE("copilote");
+	@SerializedName("PILOTE")
+	PILOTE("PILOTE"),
+	@SerializedName("COPILOTE")
+	COPILOTE("COPILOTE");
 	Statut(String statut){this.statut=statut;}
 	String statut;
 	public String toString(){return statut;}

@@ -1,5 +1,14 @@
 package jeuxDeVoitureAuto.pojo;
 
+import com.google.gson.annotations.SerializedName;
+
 public enum Saison {
-	PRINTEMPS,ETE,AUTONME,HIVER;
+	@SerializedName("PRINTEMPS")
+	PRINTEMPS,
+	@SerializedName("ETE")
+	ETE,
+	@SerializedName("AUTOMNE")
+	AUTOMNE,
+	@SerializedName("HIVER")
+	HIVER;
 }

@@ -41,8 +41,11 @@ public class TableModelPilote extends AbstractTableModel{
 		case 2:return listPilote.get(rowIndex).getPrenom();
 		case 3:return listPilote.get(rowIndex).getAge();
 		case 4:return listPilote.get(rowIndex).getStatut();
-		case 5:return listPilote.get(rowIndex).getVoiture();
+		case 5:return listPilote.get(rowIndex).getIdVoiture();
 		default:throw new IllegalArgumentException();}	
 	}
-
+	@Override
+	public String getColumnName(int columnIndex) {
+		return title[columnIndex];
+	}	
 }

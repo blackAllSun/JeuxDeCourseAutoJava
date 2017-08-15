@@ -1,7 +1,18 @@
 package jeuxDeVoitureAuto.pojo;
 
-public class Sponsor {
+import java.util.Comparator;
+
+public class Sponsor  implements Comparator,Comparable<Sponsor>{
 	int idSponsor; String nom; Adresse adresse;float budget;
+
+	int idAdresse;
+	public int getIdAdresse() {
+		return idAdresse;
+	}
+
+	public void setIdAdresse(int idAdresse) {
+		this.idAdresse = idAdresse;
+	}
 
 	public Sponsor(int idSponsor, String nom, Adresse adresse, float budget) {
 		super();
@@ -47,5 +58,19 @@ public class Sponsor {
 	public void setBudget(float budget) {
 		this.budget = budget;
 	}
+
+	@Override
+	public int compare(Object obj1, Object obj2) {
+		Integer p1 = ((Sponsor) obj1).getIdSponsor();
+	       Integer p2 = ((Sponsor) obj2).getIdSponsor();
+
+	       if (p1 > p2) {return 1;
+	       } else if (p1 < p2){return -1;
+	       } else { return 0;}
+	}
+	@Override
+	public int compareTo(Sponsor o) {
+		return this.idSponsor > o.idSponsor ? 1 : (this.idSponsor < o.idSponsor ? -1 : 0);}
+
 
 }
