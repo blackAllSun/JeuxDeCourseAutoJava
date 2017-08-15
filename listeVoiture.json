@@ -1,0 +1,48 @@
+{
+"name":"données jeux",
+
+"tabVoiture":[ 
+	{"idVoiture":"0","modele":"Audi TT","puissance":"12000","prix":"14500","vitesseMax":"220"},
+	{"idVoiture":"1","modele":"Austin Martin","puissance":"11200","prix":"22000","vitesseMax":"280"},
+	{"idVoiture":"2","modele":"Fiat 500","puissance":"7000","prix":"8000","vitesseMax":"170"},
+	{"idVoiture":"3","modele":"4Ailes","puissance":"12000","prix":"14500","vitesseMax":"122"},
+	{"idVoiture":"4","modele":"lamborgini","puissance":"32000","prix":"82000","vitesseMax":"450"},
+	{"idVoiture":"5","modele":"ferrari","puissance":"31000","prix":"93000","vitesseMax":"480"},
+	{"idVoiture":"6","modele":"Ford berline","puissance":"28000","prix":"32000","vitesseMax":"310"}
+],
+"tabPilote":[
+	{"idPilote":"0","nom":"Le Roi des Huns","prenom":"Attila","age":"42","statut":"pilote","idVoiture":"0"},
+	{"idPilote":"1","nom":"Le Conquerant","prenom":"Guillaume","age":"21","statut":"pilote","idVoiture":"1"},
+	{"idPilote":"2","nom":"Maison Tudor","prenom":"Henri VIII","age":"32","statut":"copilote","idVoiture":"0"},
+	{"idPilote":"3","nom":"Boleyn","prenom":"Anne ","age":"28","statut":"copilote","idVoiture":"1"},
+	{"idPilote":"4","nom":"de Lombardie","prenom":"Désirée","age":"14","statut":"pilote","idVoiture":"2"},
+	{"idPilote":"5","nom":"Le Bref","prenom":"Pépin ","age":"64","statut":"pilote","idVoiture":"3"},
+	{"idPilote":"6","nom":"Bonaparte","prenom":"Napoléon","age":"40","statut":"copilote","idVoiture":"2"},
+	{"idPilote":"7","nom":"Hugo","prenom":"Victor","age":"44","statut":"copilote","idVoiture":"3"}
+],
+"tabSponsor":[
+	{"idSponsor":"0","nom":"Simon Pierre","budget":"12000","idAdresse":"1"},
+	{"idSponsor":"1","nom":"Giovanni Battista Montini","budget":"14000","idAdresse":"0"},
+	{"idSponsor":"2","nom":" Saint Denis","budget":"24000","idAdresse":"2"},
+	{"idSponsor":"3","nom":"Marie Madelaine","budget":"47000","idAdresse":"3"}
+	],
+"tabAdresse":[
+	{"idAdresse":"0","ville":"Tatooine","pays":"Arkanis"},
+	{"idAdresse":"1","ville":"Mandalore","pays":"Ordo"},
+	{"idAdresse":"2","ville":"Mandalore","pays":"Shogun"},
+	{"idAdresse":"3","ville":"Ahakista","pays":"Ahakista"}
+],
+"tabEcurie":[
+{"idEcurie":"0","nom":"Formula1","idAdresse":"3","budget":"145000"},
+{"idEcurie":"1","nom":"Castagnette","idAdresse":"4","budget":"10000"},
+{"idEcurie":"2","nom":"LaSuperLente","idAdresse":"5","budget":"120000"},
+{"idEcurie":"3","nom":"LesChauffards","idAdresse":"6","budget":"17255"},
+{"idEcurie":"4","nom":"FumeLeVents","idAdresse":"7","budget":"290000"}
+],
+"tabContrat":[
+{"idContrat":"0","Saison":"AUTOMNE","idEcurie":"0","idPilote":"0","idCoPilote":"1","idSponsor":"0","idVoiture":"0"},
+{"idContrat":"1","Saison":"ETE","idEcurie":"1","idPilote":"2","idCoPilote":"3","idSponsor":"1","idVoiture":"1"},
+{"idContrat":"2","Saison":"HIVER","idEcurie":"2","idPilote":"4","idCoPilote":"5","idSponsor":"2","idVoiture":"3"},
+{"idContrat":"3","Saison":"PRINTEMPS","idEcurie":"3","idPilote":"6","idCoPilote":"7","idSponsor":"3","idVoiture":"4"}
+]
+}
