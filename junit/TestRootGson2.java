@@ -1,4 +1,4 @@
-package jeuxDeVoitureAuto.junit;
+package junit;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,18 +14,18 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
 
-import jeuxDeVoitureAuto.RootGson;
-import jeuxDeVoitureAuto.pojo.Adresse;
-import jeuxDeVoitureAuto.pojo.Contrat;
-import jeuxDeVoitureAuto.pojo.Ecurie;
-import jeuxDeVoitureAuto.pojo.Pilote;
-import jeuxDeVoitureAuto.pojo.Sponsor;
-import jeuxDeVoitureAuto.pojo.Statut;
-import jeuxDeVoitureAuto.pojo.Voiture;
+import model.RootGson;
+import model.pojo.Adresse;
+import model.pojo.Contrat;
+import model.pojo.Ecurie;
+import model.pojo.Pilote;
+import model.pojo.Sponsor;
+import model.pojo.Statut;
+import model.pojo.Voiture;
 import junit.framework.TestCase;
 
 public class TestRootGson2 extends TestCase{
-	String jsonString="/home/blackallsun/workspace/TPDiversJavaSE/src/jeuxDeVoitureAuto/listeVoiture.json";
+	String jsonString="/home/blackallsun/workspace/JeuxVoitureAuto/src/listeVoiture.json";
 	File fileToInternalStorage = new File(jsonString);
 	Gson gson = new Gson();
 	JsonReader reader=new JsonReader(new InputStreamReader(new FileInputStream(fileToInternalStorage), "UTF-8"));
@@ -122,7 +122,7 @@ public class TestRootGson2 extends TestCase{
 			 System.out.println("Puissance : "+listVoiture.get(indexVoiture).getPuissance());
 			 System.out.println("Prix : "+listVoiture.get(indexVoiture).getPrix());
 			 System.out.println("Vitesse Max : "+listVoiture.get(indexVoiture).getVitesseMax());
-
+			 System.out.println("Color : "+listVoiture.get(indexVoiture).getCouleur());
 		 
 	}
 	public void searchAdresse(int indexAdresse) throws UnsupportedEncodingException, FileNotFoundException{

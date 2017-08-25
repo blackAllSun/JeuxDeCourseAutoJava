@@ -2,13 +2,14 @@
 "name":"données jeux",
 
 "tabVoiture":[ 
-	{"idVoiture":"0","modele":"Audi TT","puissance":"12000","prix":"14500","vitesseMax":"220"},
-	{"idVoiture":"1","modele":"Austin Martin","puissance":"11200","prix":"22000","vitesseMax":"280"},
-	{"idVoiture":"2","modele":"Fiat 500","puissance":"7000","prix":"8000","vitesseMax":"170"},
-	{"idVoiture":"3","modele":"4Ailes","puissance":"12000","prix":"14500","vitesseMax":"122"},
-	{"idVoiture":"4","modele":"lamborgini","puissance":"32000","prix":"82000","vitesseMax":"450"},
-	{"idVoiture":"5","modele":"ferrari","puissance":"31000","prix":"93000","vitesseMax":"480"},
-	{"idVoiture":"6","modele":"Ford berline","puissance":"28000","prix":"32000","vitesseMax":"310"}
+	{"idVoiture":"0","modele":"Audi TT","puissance":"12000","prix":"14500","vitesseMax":"220","couleur":"red"},
+	{"idVoiture":"1","modele":"Austin Martin","puissance":"11200","prix":"22000","vitesseMax":"280","couleur":"pink"},
+	{"idVoiture":"2","modele":"Fiat 500","puissance":"7000","prix":"8000","vitesseMax":"170","couleur":"green"},
+	{"idVoiture":"3","modele":"4Ailes","puissance":"12000","prix":"14500","vitesseMax":"122","couleur":"black"},
+	{"idVoiture":"4","modele":"lamborgini","puissance":"32000","prix":"82000","vitesseMax":"450","couleur":"blue"},
+	{"idVoiture":"5","modele":"ferrari","puissance":"31000","prix":"93000","vitesseMax":"480","couleur":"white"},
+	{"idVoiture":"6","modele":"Ford berline","puissance":"28000","prix":"32000","vitesseMax":"310","couleur":"red"},
+	{"idVoiture":"7","modele":"Rolls Royce Silver(1923)","puissance":"296","prix":"450000000","vitesseMax":"120","couleur":"blue"}
 ],
 "tabPilote":[
 	{"idPilote":"0","nom":"Le Roi des Huns","prenom":"Attila","age":"42","statut":"PILOTE","idVoiture":"0"},
@@ -34,7 +35,7 @@
 	{"idAdresse":"4","ville":"Paris","pays":"France"},
 	{"idAdresse":"5","ville":"Tokyo","pays":"Japon"},
 	{"idAdresse":"6","ville":"Marseille","pays":"France"},
-	{"idAdresse":"5","ville":"Madrid","pays":"Espagne"}
+	{"idAdresse":"7","ville":"Madrid","pays":"Espagne"}
 ],
 "tabEcurie":[
 	{"idEcurie":"0","nom":"Formula1","idAdresse":"3","budget":"145000"},

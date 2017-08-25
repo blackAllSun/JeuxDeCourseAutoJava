@@ -1,4 +1,4 @@
-package jeuxDeVoitureAuto.junit;
+package junit;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -8,23 +8,23 @@ import java.io.UnsupportedEncodingException;
 import java.util.Collections;
 import java.util.List;
 
-import org.junit.Test;
 
+import org.junit.Test;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
 
-import jeuxDeVoitureAuto.RootGson;
-import jeuxDeVoitureAuto.pojo.Adresse;
-import jeuxDeVoitureAuto.pojo.Contrat;
-import jeuxDeVoitureAuto.pojo.Ecurie;
-import jeuxDeVoitureAuto.pojo.Pilote;
-import jeuxDeVoitureAuto.pojo.Statut;
-import jeuxDeVoitureAuto.pojo.Voiture;
+import model.RootGson;
+import model.pojo.Adresse;
+import model.pojo.Contrat;
+import model.pojo.Ecurie;
+import model.pojo.Pilote;
+import model.pojo.Statut;
+import model.pojo.Voiture;
 import junit.framework.TestCase;
 
 public class TestRootGson extends TestCase{
-	String jsonString="/home/blackallsun/workspace/TPDiversJavaSE/src/jeuxDeVoitureAuto/listeVoiture.json";
+	String jsonString="/home/blackallsun/workspace/JeuxVoitureAuto/src/listeVoiture.json";
 	File fileToInternalStorage = new File(jsonString);
 	Gson gson = new Gson();
 	JsonReader reader=new JsonReader(new InputStreamReader(new FileInputStream(fileToInternalStorage), "UTF-8"));
@@ -43,11 +43,13 @@ public class TestRootGson extends TestCase{
 }
 	@Test
 	private void testDeserialize() throws UnsupportedEncodingException, FileNotFoundException {
-		System.out.println(root.getName());
+	/*	System.out.println(root.getName());
 		 System.out.println(root);
 		 Statut statut=Statut.PILOTE;
 		 String userWithEnumJson = gson.toJson(statut);  
-		 System.out.println(userWithEnumJson);
+		 System.out.println(userWithEnumJson);*/
+		for(int i=0;i<listVoiture.size();i++)
+			System.out.println(root.searchVoiture(i));
 		/*searchContrat();
 		searchPilote();
 		searchEcurie();
@@ -101,7 +103,7 @@ public class TestRootGson extends TestCase{
 			 System.out.println("Puissance : "+voiture.getPuissance());
 			 System.out.println("Prix : "+voiture.getPrix());
 			 System.out.println("Vitesse Max : "+voiture.getVitesseMax());
-
+			 System.out.println("Color : "+voiture.getCouleur());
 		 }
 	}
 	public void searchAdresse() throws UnsupportedEncodingException, FileNotFoundException{
